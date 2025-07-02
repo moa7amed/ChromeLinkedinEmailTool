@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Email Finder",
+  "version": "1.0",
+  "description": "Extract email addresses from web pages.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],   
+      "js": ["assets/jquery-3.7.1.min.js", "content.js"],
+      "run_at": "document_end" 
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/email16.png",
+      "48": "assets/email48.png",
+  
+      "128": "assets/email128.png"
+    }
+  }
+}

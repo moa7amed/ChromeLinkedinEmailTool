@@ -1,0 +1,2 @@
+LinkedIn Email Finder
+A Chrome extension designed to extract publicly visible email addresses from LinkedIn pages. This tool simplifies email discovery for professionals, making networking and outreach more efficient.
